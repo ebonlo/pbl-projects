@@ -1,9 +1,9 @@
-LAMP STACK WEBSITE on AWS Cloud
+# **LAMP STACK WEBSITE on AWS Cloud**
 
 > Creat an account in AWS cloud, create an Ubuntu ec2 instance and Connect to the instance.
 
 
-## Install Apache and update the firewall
+1. ## Install Apache and update the firewall
 ```Bash
 sudo apt update
 sudo apt install apache2
@@ -27,7 +27,7 @@ http://54.227.9.232:80
 
 ![image](https://user-images.githubusercontent.com/64647166/161856428-f9ad11d8-9e7f-4fdf-a2c9-2a85f43eb46c.png)
 
-## Install MYSQL Software
+2. ## Install MYSQL Software
 > We run the following command to instaall MYSQL software and configure its security, then connect to it as the administrative user.
 ```Bash
 sudo apt install mysql-server
@@ -38,14 +38,14 @@ sudo mysql
 
 ![image](https://user-images.githubusercontent.com/64647166/161858296-319b6941-15a5-4b56-9800-bab6b6c3c9f0.png)
 
-## Install PHP
+3. ## Install PHP
 > Run the following command to install the php package, php-mysql, and libapache2-mod-php. Then check the PHP version
 ```Bash
 sudo apt install php libapache2-mod-php php-mysql
 php -v
 ```
 
-## Create a virtual Host for the webserver
+4. ## Create a virtual Host for the webserver
 
 > we create a custom directory called projectlamp to serve our website and change the ownership of  the directory to the current system user.
 
@@ -82,7 +82,7 @@ http://54.227.9.232:80
 
 ![image](https://user-images.githubusercontent.com/64647166/161863554-b057bf60-60fe-43e2-bf5b-8ea996f37460.png)
 
-## Enable PHP on the website
+5. ## Enable PHP on the website
 > Edit the /etc/apache2/mods-enabled/dir.conf to modify the default DirectoryIndex such that the index.php file will take precedence over the index.html.
 
 ```Bash
